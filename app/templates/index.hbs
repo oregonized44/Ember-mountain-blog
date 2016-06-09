@@ -1,0 +1,13 @@
+<div class="post-list">
+  <ul>
+    {{#each model as |posts|}}
+      <li>
+        <h2>{{posts.title}}</h2><br>
+        <h3>Author: {{posts.author}} </h3><br>
+        <img src={{posts.image}}><br>
+        {{posts.date}}<br>
+        {{posts.text}}<br>
+      </li><br>
+    {{/each}}
+  </ul>
+</div>
